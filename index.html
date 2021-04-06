@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anime Filter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="block"></div>
+        <nav>
+            <ul class="navlist">
+                <li><a href="#"><i class="fas fa-home list"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-book list"></i>Manga</a></li>
+                <li><a href="#"><i class="fas fa-gamepad list"></i>Games</a></li>
+                <li><a href="#"><i class="fas fa-store list"></i>Store</a></li>
+                <li><a href="#"><i class="fas fa-users list"></i>Community</a></li>
+                <li><a href="#"><i class="fas fa-user-circle list"></i>Login</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Welcome to DaBloxy</h1>
+        </header>
+        <form>
+            <input type="text" class="search" placeholder="Enter an anime name">
+            <div class="input-button">   
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </form>
+        <div class="about-contain">
+            <div class="about-header">
+                <h3>About</h3>
+                <p>Find your favorite anime here to watch and enjoy! There are
+                a wide array of categories that you can choose from to watch as
+                well as read about in the form of mangas. Join and engage with
+                the community that also has a love and taste for anime. Hope you
+                have found a place you can call home!
+                </p>
+            </div>
+            <div class="about-img-contain">
+                <img class="about-img" src="https://alliedanime.com/wp-content/uploads/2019/11/Hero-Academy-1.jpg">
+            </div>
+        </div>
+        <div class="filter-list">
+            <h2>Anime Categories</h2>
+            <div class="category-list">
+                <ul>
+                    <li><button class="button-list" id="all">All</button></li>
+                    <li><button class="button-list" id="action">Action</button></li>
+                    <li><button class="button-list" id="adventure">Adventure</button></li>
+                    <li><button class="button-list" id="space">Space</button></li>
+                    <li><button class="button-list" id="shounen">Shounen</button></li>
+                    <li><button class="button-list" id="scifi">Sci-Fi</button></li>
+                    <li><button class="button-list" id="mecha">Mecha</button></li>
+                </ul>
+            </div>
+            <div class="anime-contain">
+                <div class="categs action-categ fade">
+                    <div class="anime sao">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/11/39717.webp">
+                        <h3>Sword Art Online</h3>
+                    </div>
+                    <div class="anime boku-no-hero">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/10/78745.webp">
+                        <h3>Boku no Hero..</h3>
+                    </div>
+                    <div class="anime tokyo">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/5/64449.webp">
+                        <h3>Tokyo Ghoul</h3>
+                    </div>
+                </div>
+                <div class="categs adventure-categ fade">
+                    <div class="anime no-game">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/1074/111944.webp">
+                        <h3>No Game No Life</h3>
+                    </div>
+                    <div class="anime cowboy-bebop">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/4/19644.webp">
+                        <h3>Cowboy Bebop</h3>
+                    </div>
+                    <div class="anime akame-ga-kill">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/1429/95946.webp">
+                        <h3>Akame Ga Kill</h3>
+                    </div>
+                </div>
+                <div class="categs space-categ fade">
+                    <div class="anime space-dandy">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/4/56611.webp">
+                        <h3>Space Dandy</h3> 
+                    </div>
+                    <div class="anime kanta">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/1784/106428.webp">
+                        <h3>Kanata no Astra</h3>
+                    </div>
+                    <div class="anime terra-formars">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/2/67117.webp">
+                        <h3>Terra Formars</h3>
+                    </div>
+                </div>
+                <div class="categs shounen-categ fade">
+                    <div class="anime hxh">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/11/33657.webp">
+                        <h3>HxH(2011)</h3>
+                    </div>
+                    <div class="anime mirai">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/13/33465.webp">
+                        <h3>Mirai Nikki</h3>
+                    </div>
+                    <div class="anime kimetsu">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/1286/99889.webp">
+                        <h3>Kimetsu no..</h3>
+                    </div>
+                </div>
+                <div class="categs scifi-categ fade">
+                    <div class="anime steins-gate">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/5/73199.webp">
+                        <h3>Steins Gate</h3>
+                    </div>
+                    <div class="anime kiseijuu">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/3/73178.webp">
+                        <h3>Kiseijuu: Sei..</h3>
+                    </div>
+                    <div class="anime psycho-pass">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/5/43399.webp">
+                        <h3>Psycho-Pass</h3>
+                    </div>
+                </div>
+                <div class="categs mecha-categ fade">
+                    <div class="anime tengen">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/4/5123.webp">
+                        <h3>Tengen Toppa..</h3>
+                    </div>
+                    <div class="anime neon-genesis">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/1314/108941.webp">
+                        <h3>Neon Genesis..</h3>
+                    </div>
+                    <div class="anime guilty-crown">
+                        <img class="image" src="https://cdn.myanimelist.net/images/anime/8/33713.webp">
+                        <h3>Guilty Crown</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contain fade">
+            <img class="img-modal" src="https://cdn.myanimelist.net/images/anime/1314/108941.webp">
+            <button class="x-out">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

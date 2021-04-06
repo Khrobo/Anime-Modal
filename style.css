@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0B0C10;
+    font-size: 20px;
+}
+
+/* Nav List */
+
+nav {
+    background: #1F2833;
+    padding: 1rem;
+    text-align: center;
+}
+.navlist li {
+    display: inline;
+    
+}
+.list {
+    margin-right: .5rem;
+}
+.navlist a {
+    color: white;
+    text-decoration: none;
+    margin-left: .6rem;
+    margin-right: .7rem;
+    transition-property: color;
+    transition-duration: .4s;
+}
+.navlist a:hover {
+    color: #66FCF1;
+}
+
+/* Header */
+
+header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #66FCF1;
+}
+form {
+    text-align: center;
+    margin-top: 4rem;
+}
+.search,
+.fa-search {
+    padding: .55rem;
+    border-radius: 4px;
+}
+.search {
+    width: 16rem;
+    padding-right: 3.7rem;
+    border-color: transparent;
+    border: 2px solid #45A29E;
+}
+.input-button {
+    display: inline-block;
+    margin-left: -3rem;
+    padding: .55rem;
+}
+::placeholder {
+    color: #45A29E;
+}
+.search-button {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 2px solid #45A29E;
+}
+
+/* About */
+
+.about-contain {
+    padding-left: 1.5rem;
+    margin-top: 4rem;
+    background: #1F2833;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about-contain h3 {
+    font-size: 2rem;
+}
+.about-contain p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    word-break: normal;
+    width: 400px;
+}
+.about-img-contain {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-img {
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Anime categories */
+
+.filter-list h2,
+.category-list {
+    text-align: center;
+    margin-top: 2rem;
+}
+.category-list li {
+    display: inline;
+}
+.category-list button {
+    padding: .5rem;
+    background: transparent;
+}
+.category-list ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.button-list {
+    font-size: 1.2rem;
+    border: 2px solid #45A29E;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color .4s;
+}
+.button-list:hover {
+    color: #45A29E;
+}
+.anime-contain {
+    text-align: center;
+}
+.anime {
+    margin-right: 2rem;
+    margin-top: 3rem;
+    background: #1F2833;
+    padding: 1.1rem;
+    border: 2px solid #45A29E;
+    border-radius: 4px;
+}
+.action-categ, .adventure-categ,
+.space-categ, .shounen-categ,
+.scifi-categ, .mecha-categ {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.image {
+    object-fit: cover;
+    width: 200px;
+    height: 300px;
+}
+.fade {
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+@keyframes fadein {
+    from {opacity: 0.1}
+    to {opacity: 1}
+}
+
+/* Modals */
+
+.contain {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.x-out {
+    position: absolute;
+    padding: .4rem;
+    left: 98%;
+    top: -8%;
+}
+.img-modal {
+    object-fit: cover;
+    width: 600px;
+    height: 450px;
+    background: #1F2833;
+    padding: 1.1rem;
+    border: 2px solid #45A29E;
+    border-radius: 4px;
+}
+.left, .right,
+.x-out {
+    padding: .4rem;
+    color: #66FCF1;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.left {
+    position: absolute;
+    left: -5%;
+    top: 50%;
+}
+.right {
+    position: absolute;
+    right: -5%;
+    top: 50%;
+}
+.fa-chevron-left,
+.fa-chevron-right,
+.fa-times {
+    font-size: 1.7rem;
+}
+
+.block {
+    background: red;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
